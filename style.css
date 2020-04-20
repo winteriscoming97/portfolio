@@ -15,8 +15,10 @@ hr {
 }
 
 .container-fluid,
-.container {
+.container,
+.row {
   min-width: 450px;
+  max-width: 100%;
 }
 /*  Nav  */
 
@@ -51,11 +53,18 @@ hr {
 .divider {
   height: 50px;
   width: 100%;
-  background-image: linear-gradient(hsl(0, 0%, 40%), white 80%);
+  background-image: linear-gradient(hsl(0, 0%, 70%), white 80%);
 }
 
 /* Bio Section  */
+.bio-text {
+  width: 400px;
+}
 
 /* Portfolio  */
+#Portfolio .row {
+  overflow-x: scroll;
+}
+
 
 /* Contacts  */

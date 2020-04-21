@@ -16,7 +16,7 @@ hr {
 
 .container-fluid,
 .container,
-.row {
+.divider {
   min-width: 450px;
   max-width: 100%;
 }

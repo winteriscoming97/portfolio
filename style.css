@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+
+/*  Global  */
+* {
+  box-sizing: content-box;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.head-font {
+  font-family: 'Lato', Georgia, times;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  background-image: url('./images/body_background.JPG');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 50px 100px;
+}
+
+button {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(to bottom, white, hsl(0, 0%, 30%));
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+}
+
+/*  Header  */
+header {
+  background-image: linear-gradient(to top, white, green);
+  padding: 100px 0;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+header h3 {
+  font-size: 1.6em;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.img-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.text-wrapper {
+  width: 550px;
+  display: flex;
+  background-color: white;
+  flex-flow: column;
+  margin-left: 100px;
+  padding: 30px;
+  box-shadow: 0 10px transparent;
+}
+
+/*  Nav  */
+nav {
+  margin-top: 100px;
+}
+
+nav button {
+  margin: 0 20px;
+}

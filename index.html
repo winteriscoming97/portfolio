@@ -11,28 +11,72 @@
     <link rel="stylesheet" href="./style.css" type="text/css"/>
     <script src="/index.js"></script>
   </head>
+  <script></script>
   <body>
     <header class="container">
       <div class="row">
-        <div class="img-wrapper">
+        <div class="img-wrapper shadow">
           <img src="#"/>
         </div>
 
-        <div class="text-wrapper">
+        <div class="text-wrapper shadow">
           <h1 class="head-font">Justin Jackson</h1>
           <h3><i>Full-Stack Web Developer</i></h3>
           <p>A passionate and dedicated developer who loves to face down challenges and create web apps using industry standards.</p>
         </div>
       </div>
       <nav class="row">
-        <button class="nav-link" type="button">Portfolio</button>
-        <button class="nav-link" type="button">About</button>
-        <button class="nav-link" type="button">Contact & Links</button>
+        <a class="nav-link" href="#Portfolio" draggable="false"><button class="shadow" type="button">Portfolio</button></a>
+        <a class="nav-link" href="#About" draggable="false"><button class="shadow" type="button">About</button></a>
+        <a class="nav-link" href="#Contact" draggable="false"><button class="shadow" type="button">Contact & Links</button></a>
       </nav>
     </header>
 
-    <section class="container" id="Portfolio">
+    <section class="container" id="Projects">
+      <h2 class="title head-font outset">Projects</h2>
+      <div class="row">
+        <figure class="container">
+          <a href="#"><img class="outset" src="./images/static_site_lg.png" alt="" draggable="false"/></a>
+          <figcaption class="shadow">
+            Responsive business SPA created using React and Bootstrap. Static front-end.
+          </figcaption>
+        </figure>
+        <figure>
+          <figcaption>
+          </figcaption>
+        </figure>
+        <figure>
+          <figcaption>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
 
+    <section class="row" id="Skills">
+      <div class="container skill-card outset">
+        <img src="./images/web_front.jpg" alt="">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="container skill-card outset">
+        <img src="./images/react.png" alt="">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="container skill-card outset">
+        <img src="./images/ruby_on_rails.png" alt="">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </section>
 
     <section class="container" id="About">
@@ -42,7 +86,6 @@
     <section class="container" id="Contact">
 
     </section>
-    <!-- Greeting  -->
 
   </body>
 </html>

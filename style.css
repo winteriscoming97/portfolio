@@ -67,7 +67,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .row {
@@ -87,11 +87,11 @@ section {
   background-color: slategrey;
   color: white;
   margin-top: 20px;
-  padding: 8px;
+  padding: 4px 8px;
 }
 
 .outset {
-  border: 6px outset grey;
+  border: 6px ridge gray;
 }
 
 
@@ -159,7 +159,7 @@ figure {
   margin: 20px 0;
 }
 
-figure img {
+img {
   max-width: 100%;
 }
 
@@ -169,12 +169,57 @@ figcaption {
   font-size: 1.6em;
   font-weight: bold;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   border-radius: 20px;
-  background-color: hsl(180, 80%, 80%);
+  background-color: hsl(180, 80%, 95%);
   border: 1px solid grey;
+  color: black;
 }
 
 /*  Skills  */
 #Skills {
+}
+
+#Skills .title {
+  margin-bottom: 20px;
+}
+
+.skill-card {
+  align-items: flex-start;
+  width: 25%;
+  background-color: #ddd;
+  justify-content: flex-start;
+}
+
+.skill-card img {
+  width: 100%;
+  border-bottom: 30px double white;
+}
+
+#JS img {
+  border-bottom-color: #323330;
+}
+
+#React img {
+  border-bottom-color: #61d9fa;
+}
+
+.skill-title {
+  max-width: 95%;
+  display: block;
+  margin: 20px auto;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+ul {
+  padding-top: 0;
+  margin-top: 0;
+  padding-left: 35px;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+#Rails ul {
+  display: none;
 }

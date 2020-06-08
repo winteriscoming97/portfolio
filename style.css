@@ -20,22 +20,41 @@ p {
   margin: 0;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
 body {
   background-image: url('./images/body_background.JPG');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 50px 100px;
+  padding: 50px 5px;
 }
 
 button {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   color: white;
   background: linear-gradient(to bottom, white, hsl(0, 0%, 30%));
   border: 5px outset grey;
-  padding: 20px;
+  padding: 8px;
   transition-property: transform;
   transition-duration: .05s;
 }
@@ -59,21 +78,33 @@ section {
   background-color: hsla(162, 6%, 69%, 0.95);
   border: 5px ridge slategrey;
   border-top: 30px double #51672d;
-  padding-bottom: 50px;
+  padding: 0 10px 10px 10px;
   margin-top: 100px;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-content: center;
+  width: 100%;
+}
+
+.responsive-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-content: center;
   width: 100%;
 }
@@ -101,41 +132,30 @@ header {
   max-width: 100%;
 }
 
-h1 {
-  font-size: 5em;
-}
 
-header h3 {
-  font-size: 1.6em;
-}
-
-header p {
-  font-size: 1.3em;
-}
-
-header .row {
-  justify-content: center;
-}
 
 .img-wrapper {
-  width: 250px;
-  height: 250px;
-  border: 10px double #51672d;
+  width: 200px;
+  height: 200px;
+  border: 5px double #51672d;
   border-radius: 50%;
-  background-color: white;
-  margin-right: 100px;
-  margin-left: 50px;
+  background-image: url('./images/me.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #e8dcd2;
+  margin: 0 auto 30px auto;
 }
 
 .text-wrapper {
-  width: 550px;
+  width: 75%;
   display: flex;
   color: white;
   background-image: linear-gradient(to bottom, grey, hsl(0, 0%, 15%));
   flex-flow: column;
-  margin-left: 100px;
-  padding: 30px;
+  padding: 25px;
   border: 10px ridge grey;
+  margin: 0 auto;
 }
 
 /*  Nav  */
@@ -144,11 +164,11 @@ nav {
 }
 
 .nav-link {
-  margin: 0 20px;
+  margin: 0;
 }
 
 
-/*  Portfolio  */
+/*  Projects  */
 #Projects {
   margin-top: 0 !important;
 }
@@ -159,14 +179,10 @@ figure {
   margin: 20px 0;
 }
 
-img {
-  max-width: 100%;
-}
-
 figcaption {
   display: block;
   max-width: 95%;
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: bold;
   position: absolute;
   bottom: 15px;
@@ -186,7 +202,7 @@ figcaption {
 
 .skill-card {
   align-items: flex-start;
-  width: 25%;
+  width: 100%;
   background-color: #ddd;
   justify-content: flex-start;
 }
@@ -200,6 +216,10 @@ figcaption {
   border-bottom-color: #323330;
 }
 
+#React {
+  margin: 30px 0;
+}
+
 #React img {
   border-bottom-color: #61d9fa;
 }
@@ -208,18 +228,109 @@ figcaption {
   max-width: 95%;
   display: block;
   margin: 20px auto;
-  font-size: 3em;
-  font-weight: bold;
 }
 
 ul {
   padding-top: 0;
   margin-top: 0;
   padding-left: 35px;
-  font-size: 2em;
   line-height: 1.5em;
 }
 
 #Rails ul {
   display: none;
+}
+
+/*  About  */
+
+#About {
+  width: 50%;
+  text-align: center;
+  margin: 30px 0;
+}
+
+#More {
+  display: inline;
+  color: white;
+  font-size: 1em;
+}
+
+
+/*  Contact  */
+#Contact > .row {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contact-btn {
+  color: white;
+  text-shadow: 0 4px 4px black;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.contact-btn i {
+  font-size: 1.4em;
+  position: relative;
+  top: 5px;
+}
+
+@media (min-width: 768px) {
+  button {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 50px 100px;
+  }
+
+
+}
+
+@media (min-width: 1366px) {
+  section {
+    padding: 0 50px 50px 50px;
+  }
+
+  .responsive-flex {
+    flex-direction: row;
+  }
+
+  header .row {
+    justify-content: center;
+  }
+
+  figcaption {
+    font-size: 1.6em;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+
+  h2 {
+    font-size: 4em;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+  ul {
+    font-size: 2em;
+  }
+
+  .skill-card {
+    align-items: flex-start;
+    width: 20%;
+  }
 }

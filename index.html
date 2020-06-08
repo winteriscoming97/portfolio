@@ -13,10 +13,10 @@
   </head>
   <script></script>
   <body>
+
     <header class="container">
-      <div class="row">
+      <div class="responsive-flex">
         <div class="img-wrapper shadow">
-          <img src="#"/>
         </div>
 
         <div class="text-wrapper shadow">
@@ -28,36 +28,44 @@
       <nav class="row">
         <a class="nav-link" href="#Portfolio" draggable="false"><button class="shadow" type="button">Portfolio</button></a>
         <a class="nav-link" href="#Skills" draggable="false"><button class="shadow" type="button">Skills</button></a>
-        <a class="nav-link" href="#Contact" draggable="false"><button class="shadow" type="button">Contact & Links</button></a>
+        <a class="nav-link" href="#Contact" draggable="false"><button class="shadow" type="button">Contact</button></a>
       </nav>
     </header>
 
     <section class="container" id="Projects">
       <h2 class="title head-font outset">Projects</h2>
-      <div class="row">
+      <div class="responsive-flex">
+
         <a href="http://xn--cahngsongmai-09a3188h.com/" target="_blank" rel="noreferrer"><figure class="container">
           <img class="outset" src="./images/static_site_lg.png" alt="" draggable="false"/>
           <figcaption class="shadow">
             Responsive business SPA created using React and Bootstrap. Static front-end.
           </figcaption>
         </figure></a>
-        <figure>
-          <figcaption>
+
+        <a href="https://shrouded-caverns-09438.herokuapp.com/" target="_blank" rel="noreferrer"><figure class="container">
+          <img class="outset" src="./images/currency_converter.png" alt="" draggable="false"/>
+          <figcaption class="shadow">
+            Simple currency conversion app that uses React, Bootstrap, and promise API.
+          </figcaption>
+        </figure></a>
+
+        <figure class="container">
+          <img class="outset" src="./images/Portfolio.png" alt="" draggable="false"/>
+          <figcaption class="shadow">
+            Simple currency conversion app that uses React, Bootstrap, and promise API.
           </figcaption>
         </figure>
-        <figure>
-          <figcaption>
-          </figcaption>
-        </figure>
+
       </div>
     </section>
 
     <section class="container" id="Skills">
       <h2 class="title outset head-font">Skills</h2>
-      <div class="row">
+      <div class="responsive-flex">
         <div class="container skill-card outset" id="JS">
           <img src="./images/web_front.png" alt="">
-          <h3 class="skill-title">Web Base</h3>
+          <h2 class="skill-title">Web Base</h2>
           <ul>
             <li><p>HTML</p></li>
             <li><p>CSS, Bootstrap</p></li>
@@ -66,16 +74,16 @@
         </div>
         <div class="container skill-card outset" id="React">
           <img src="./images/react.png" alt="">
-          <h3 class="skill-title" >Front-End Framework</h3>
+          <h2 class="skill-title" >Front-End Framework</h2>
           <ul>
-            <li><p>NodePackageManager</p></li>
+            <li><p>Node Package Manager</p></li>
             <li><p>REST API</p></li>
             <li><p>Single Page Applications</p></li>
           </ul>
         </div>
         <div class="container skill-card outset" id="Rails">
           <img src="./images/ruby_on_rails.png" alt="">
-          <h3 class="skill-title">Back-End Framework</h3>
+          <h2 class="skill-title">Back-End Framework</h2>
           <ul>
             <li><p></p></li>
             <li><p></p></li>
@@ -85,19 +93,19 @@
       </div>
     </section>
 
-    <section class="container" id="About">
-      <h2></h2>
-      <p></p>
-    </section>
-
-    <section class="row" id="Contact">
-      <div class="container">
-
+    <section class="container" id="Contact">
+      <h2 class="title outset head-font">Contact</h2>
+      <div class="container" id="About">
+        <h2>More About Me</h2>
+        <div>
+          <p>It all started from an after school program where I was the only student to show up. Despite the program shutting down only two weeks in, the world of coding had been revealed to me and i knew that this would by my dream career.</p><span id="More">...click to see more</span>
+        </div>
       </div>
-      <div class="container">
-        <button type="button"><i class="fas fa-envelope-square"></i> Copy My Email</button>
-        <a href="#" target="_blank" rel="noreferrer"><button type="button"><i class="fab fa-github-square"></i> Github</button></a>
-        <a href="#" target="_blank" rel="noreferrer"><button type="button"><i class="fab fa-linkedin"></i> LinkedIn</button></a>
+
+      <div class="responsive-flex">
+        <button type="button" class="contact-btn"><i class="fas fa-envelope-square"></i> Copy My Email</button>
+        <a href="https://github.com/winteriscoming97" target="_blank" rel="noreferrer"><button type="button" class="contact-btn"><i class="fab fa-github-square"></i> Github</button></a>
+        <a href="https://www.linkedin.com/in/justin-j-8a64471a9/" target="_blank" rel="noreferrer"><button type="button" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</button></a>
       </div>
     </section>
   </body>

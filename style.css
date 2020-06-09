@@ -45,7 +45,7 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 50px 5px;
+  padding: 10px 5px;
 }
 
 button {
@@ -128,7 +128,7 @@ img {
 
 /*  Header  */
 header {
-  padding: 100px 0;
+  padding: 40px 0;
   max-width: 100%;
 }
 
@@ -148,7 +148,6 @@ header {
 }
 
 .text-wrapper {
-  width: 75%;
   display: flex;
   color: white;
   background-image: linear-gradient(to bottom, grey, hsl(0, 0%, 15%));
@@ -161,10 +160,6 @@ header {
 /*  Nav  */
 nav {
   margin-top: 100px;
-}
-
-.nav-link {
-  margin: 0;
 }
 
 
@@ -181,8 +176,8 @@ figure {
 
 figcaption {
   display: block;
-  max-width: 95%;
-  font-size: 1em;
+  max-width: 90%;
+  font-size: .8em;
   font-weight: bold;
   position: absolute;
   bottom: 15px;
@@ -194,6 +189,7 @@ figcaption {
 
 /*  Skills  */
 #Skills {
+  padding: 20px;
 }
 
 #Skills .title {
@@ -201,10 +197,11 @@ figcaption {
 }
 
 .skill-card {
-  align-items: flex-start;
-  width: 100%;
+  width: 95%;
   background-color: #ddd;
   justify-content: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .skill-card img {
@@ -212,47 +209,47 @@ figcaption {
   border-bottom: 30px double white;
 }
 
+.skill-title {
+  max-width: 95%;
+  display: block;
+  margin: 20px 50px;
+}
+
 #JS img {
   border-bottom-color: #323330;
 }
 
 #React {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 #React img {
   border-bottom-color: #61d9fa;
 }
 
-.skill-title {
-  max-width: 95%;
-  display: block;
-  margin: 20px auto;
-}
-
 ul {
   padding-top: 0;
   margin-top: 0;
-  padding-left: 35px;
   line-height: 1.5em;
 }
 
-#Rails ul {
-  display: none;
-}
 
 /*  About  */
 
 #About {
-  width: 50%;
+  width: 85%;
   text-align: center;
-  margin: 30px 0;
+  margin: 30px 0 50px 0;
 }
 
 #More {
   display: inline;
   color: white;
-  font-size: 1em;
+  font-size: .8em;
+}
+
+ #More:hover {
+  cursor: pointer;
 }
 
 
@@ -266,19 +263,52 @@ ul {
   color: white;
   text-shadow: 0 4px 4px black;
   font-weight: bold;
-  margin: 0 20px;
+  margin: 0 5px;
+  font-size: 1em;
 }
 
 .contact-btn i {
   font-size: 1.4em;
   position: relative;
-  top: 5px;
+  top: 0;
 }
 
 @media (min-width: 768px) {
   button {
     font-size: 2em;
+    padding: 10px;
+
   }
+
+  .img-wrapper {
+    width: 300px;
+    height: 300px;
+    border: 10px double #51672d;
+  }
+
+  figcaption {
+    font-size: 1.8em;
+  }
+
+  #Skills .responsive-flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skill-card {
+    align-items: flex-start;
+    width: 32%;
+  }
+
+  .skill-title {
+    font-size: 1.8em;
+    margin: 15px 30px;
+  }
+
+  #React {
+    margin: 0;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -286,6 +316,26 @@ ul {
     padding: 50px 100px;
   }
 
+  .responsive-flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .img-wrapper {
+    width: 300px;
+    height: 300px;
+    margin: 0 0 0 auto;
+    border: 10px double #51672d;
+  }
+
+  .text-wrapper {
+    margin: 0 auto 0 100px;
+    width: 40%;
+  }
+
+  button {
+    padding: 20px;
+  }
 
 }
 
@@ -294,16 +344,8 @@ ul {
     padding: 0 50px 50px 50px;
   }
 
-  .responsive-flex {
-    flex-direction: row;
-  }
-
   header .row {
-    justify-content: center;
-  }
-
-  figcaption {
-    font-size: 1.6em;
+    width: 50%;
   }
 
   h1 {
@@ -321,16 +363,10 @@ ul {
   }
 
   p {
-    font-size: 1.3em;
-    line-height: 1.5em;
+    font-size: 1.8em;
   }
 
   ul {
     font-size: 2em;
-  }
-
-  .skill-card {
-    align-items: flex-start;
-    width: 20%;
   }
 }

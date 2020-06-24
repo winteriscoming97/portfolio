@@ -9,6 +9,10 @@ h1 {
   font-weight: bold;
 }
 
+p {
+  font-size: 1.3em;
+}
+
 hr {
   border: solid 1px black;
   box-shadow: 1px 1px white;
@@ -27,10 +31,11 @@ hr {
 
 #Greeting {
   height: 500px;
-  background-image: url(./images/body_background.jpg);
+  background-image: url(./images/greeting.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: grayscale(.7);
 }
 
 
@@ -61,9 +66,26 @@ hr {
   width: 400px;
 }
 
+#Bio {
+  margin: 50px 0;
+}
+
+#Me {
+  background-image: url('./images/me.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 400px;
+  filter: grayscale(.3);
+}
+
 /* Portfolio  */
 #Portfolio .row {
   overflow-x: scroll;
+}
+
+#Portfolio img {
+  width: 400px;
 }
 
 
@@ -71,4 +93,21 @@ hr {
 
 .fab {
   font-size: 1.5em;
+}
+
+@media (min-width: 1366px) {
+
+  #Portfolio .row {
+    overflow-x: hidden;
+  }
+
+  #Portfolio img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #Portfolio img {
+    width: 550px;
+  }
 }
